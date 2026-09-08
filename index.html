@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Divya Satya Teja Yerra — Mechanical Engineer, EV Enthusiast, and AI Explorer from Bhimavaram, Andhra Pradesh. Explore my portfolio, projects, and skills." />
+  <meta name="keywords" content="Divya Satya Teja Yerra, Mechanical Engineer, EV, Electric Vehicle, Python, Portfolio, Bhimavaram" />
+  <meta name="author" content="Divya Satya Teja Yerra" />
+  <meta property="og:title" content="Divya Satya Teja Yerra | Portfolio" />
+  <meta property="og:description" content="Mechanical Engineer | EV Enthusiast | Exploring AI & Python" />
+  <meta property="og:type" content="website" />
+  <title>Divya Satya Teja Yerra | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-text">DST<span class="logo-accent">Y</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#activities" class="nav-link">Activities</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <a href="resume.pdf" class="nav-resume-btn" download id="resumeBtn">
+            <i class="fas fa-download"></i> Resume
+          </a>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" class="hero-section">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-particles" id="heroParticles"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-avatar-wrapper" data-aos="fade-down">
+        <div class="hero-avatar-ring"></div>
+        <div class="hero-avatar">
+          <img src="profile.jpg" alt="Divya Satya Teja Yerra" />
+        </div>
+        <div class="hero-avatar-badge">
+          <i class="fas fa-cog fa-spin"></i>
+        </div>
+      </div>
+      <div class="hero-text" data-aos="fade-up">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Divya Satya Teja<br /><span class="hero-name-accent">Yerra</span></h1>
+        <div class="hero-tagline-wrapper">
+          <span class="hero-tagline" id="heroTagline"></span>
+          <span class="hero-cursor">|</span>
+        </div>
+        <p class="hero-location">
+          <i class="fas fa-map-marker-alt"></i>
+          Bhimavaram, Andhra Pradesh, India
+        </p>
+        <div class="hero-cta-group">
+          <a href="#about" class="btn btn-primary">
+            <span>Explore My Work</span>
+            <i class="fas fa-arrow-down"></i>
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <span>Get In Touch</span>
+            <i class="fas fa-paper-plane"></i>
+          </a>
+        </div>
+        <div class="hero-social">
+          <a href="#" class="social-icon-link" aria-label="LinkedIn" id="linkedinLink">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="social-icon-link" aria-label="GitHub" id="githubLink">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:satyatejayerra@gmail.com" class="social-icon-link" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="hero-scroll-hint">
+      <div class="scroll-wheel"></div>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Who I Am</span>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-col" data-aos="fade-right">
+          <div class="about-image-frame">
+            <img src="profile.jpg" alt="Divya Satya Teja Yerra" />
+            <div class="about-image-deco"></div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-num">2022</span>
+              <span class="stat-label">B.Tech Graduate</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">1+</span>
+              <span class="stat-label">Project</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">3</span>
+              <span class="stat-label">NSS Years</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text-col" data-aos="fade-left">
+          <h3 class="about-subtitle">Mechanical Engineer with a Digital Vision</h3>
+          <p class="about-paragraph">
+            I'm a Mechanical Engineering graduate with a growing interest in Python, AI tools, and sustainable technology. I love learning new skills quickly and applying them to real-world problems — from electric vehicle systems to web technologies.
+          </p>
+          <p class="about-paragraph">
+            Always curious and always adapting, I bridge the gap between traditional engineering disciplines and the modern digital landscape. My passion for electric vehicles reflects my commitment to a sustainable future.
+          </p>
+          <div class="about-strengths">
+            <h4>Core Strengths</h4>
+            <div class="strength-pills">
+              <span class="pill"><i class="fas fa-bolt"></i> Quick Learner</span>
+              <span class="pill"><i class="fas fa-star"></i> Self-Confident</span>
+              <span class="pill"><i class="fas fa-sun"></i> Optimistic</span>
+              <span class="pill"><i class="fas fa-fire"></i> Hardworking</span>
+            </div>
+          </div>
+          <div class="about-contact-info">
+            <div class="contact-info-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:satyatejayerra@gmail.com">satyatejayerra@gmail.com</a>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-phone"></i>
+              <a href="tel:+917288825172">+91-7288825172</a>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Bhimavaram, West Godavari, AP</span>
+            </div>
+          </div>
+          <a href="resume.pdf" download class="btn btn-primary mt-2">
+            <i class="fas fa-file-download"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Academic Journey</span>
+        <h2 class="section-title">My <span class="accent">Education</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-year">2018 – 2022</div>
+            <h3 class="timeline-title">B.Tech in Mechanical Engineering</h3>
+            <p class="timeline-institution">
+              <i class="fas fa-university"></i>
+              DNR College of Engineering &amp; Technology
+            </p>
+            <p class="timeline-location">Bhimavaram, Andhra Pradesh</p>
+            <div class="timeline-score">
+              <span class="score-label">Aggregate</span>
+              <div class="score-bar-wrap">
+                <div class="score-bar" style="--score: 58%">
+                  <span class="score-fill"></span>
+                </div>
+                <span class="score-pct">58%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item-right" data-aos="fade-left">
+          <div class="timeline-icon">
+            <i class="fas fa-school"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-year">2016 – 2018</div>
+            <h3 class="timeline-title">Intermediate — MPC</h3>
+            <p class="timeline-institution">
+              <i class="fas fa-university"></i>
+              Narayana Junior College
+            </p>
+            <p class="timeline-location">Bhimavaram, Andhra Pradesh</p>
+            <div class="timeline-score">
+              <span class="score-label">Score</span>
+              <div class="score-bar-wrap">
+                <div class="score-bar" style="--score: 70%">
+                  <span class="score-fill"></span>
+                </div>
+                <span class="score-pct">70%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-icon">
+            <i class="fas fa-book-open"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-year">2016</div>
+            <h3 class="timeline-title">SSC — Secondary School Certificate</h3>
+            <p class="timeline-institution">
+              <i class="fas fa-university"></i>
+              Sasi Merit School
+            </p>
+            <p class="timeline-location">Bhimavaram, Andhra Pradesh</p>
+            <div class="timeline-score">
+              <span class="score-label">Score</span>
+              <div class="score-bar-wrap">
+                <div class="score-bar" style="--score: 80%">
+                  <span class="score-fill"></span>
+                </div>
+                <span class="score-pct">80%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">What I Know</span>
+        <h2 class="section-title">My <span class="accent">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="skill-cat-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h3 class="skill-cat-title">Engineering &amp; Design</h3>
+          <div class="skill-tags">
+            <div class="skill-tag">
+              <i class="fas fa-drafting-compass"></i>
+              <span>AutoCAD 2D</span>
+            </div>
+            <div class="skill-tag">
+              <i class="fas fa-wrench"></i>
+              <span>Mechanical Design</span>
+            </div>
+            <div class="skill-tag">
+              <i class="fas fa-cube"></i>
+              <span>Design Fundamentals</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-cat-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="skill-cat-title">Programming</h3>
+          <div class="skill-tags">
+            <div class="skill-tag skill-tag-accent">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+            </div>
+          </div>
+          <div class="skill-proficiency">
+            <span>Python</span>
+            <div class="proficiency-bar">
+              <div class="proficiency-fill" style="--pct: 65%"></div>
+            </div>
+            <span class="proficiency-label">Learning</span>
+          </div>
+        </div>
+
+        <div class="skill-category-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-cat-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h3 class="skill-cat-title">Web Technologies</h3>
+          <div class="skill-tags">
+            <div class="skill-tag">
+              <i class="fab fa-html5"></i>
+              <span>HTML</span>
+            </div>
+            <div class="skill-tag">
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="skill-cat-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h3 class="skill-cat-title">Tools &amp; Platforms</h3>
+          <div class="skill-tags">
+            <div class="skill-tag skill-tag-accent">
+              <i class="fas fa-brain"></i>
+              <span>AI Tools</span>
+            </div>
+            <div class="skill-tag">
+              <i class="fab fa-windows"></i>
+              <span>Windows OS</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">What I've Built</span>
+        <h2 class="section-title">My <span class="accent">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-aos="fade-up">
+          <div class="project-card-top">
+            <div class="project-icon-wrap">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <div class="project-tags-top">
+              <span class="project-tag-badge">EV</span>
+              <span class="project-tag-badge">Mechanical</span>
+              <span class="project-tag-badge">Sustainability</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Fabrication of Electric Vehicle</h3>
+            <p class="project-desc">
+              Explored EV technologies end-to-end — including energy storage systems and charging mechanisms — as a practical, climate-conscious alternative to conventional transportation. This project combined mechanical design thinking with an interest in sustainable energy solutions.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <i class="fas fa-battery-full"></i>
+                <span>Energy Storage Systems</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-charging-station"></i>
+                <span>Charging Mechanisms</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-leaf"></i>
+                <span>Sustainable Design</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <span class="project-type">
+              <i class="fas fa-flask"></i> Academic Project
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXTRA CURRICULAR ===== -->
+  <section id="activities" class="section activities-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Beyond Academics</span>
+        <h2 class="section-title">Extra-Curricular <span class="accent">Activities</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="activities-grid">
+
+        <div class="activity-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="activity-icon">
+            <i class="fas fa-hands-helping"></i>
+          </div>
+          <div class="activity-content">
+            <div class="activity-meta">
+              <span class="activity-badge">3 Years</span>
+            </div>
+            <h3 class="activity-title">NSS Volunteer</h3>
+            <p class="activity-desc">
+              Served as a National Service Scheme (NSS) Volunteer for 3 years, organizing medical camps in rural villages to support community health — reflecting a commitment to social responsibility alongside technical growth.
+            </p>
+            <div class="activity-tags">
+              <span class="activity-tag"><i class="fas fa-heart"></i> Community Health</span>
+              <span class="activity-tag"><i class="fas fa-users"></i> Leadership</span>
+              <span class="activity-tag"><i class="fas fa-shield-alt"></i> Social Responsibility</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card hobbies-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="activity-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="activity-content">
+            <h3 class="activity-title">Hobbies &amp; Interests</h3>
+            <div class="hobbies-list">
+              <div class="hobby-item">
+                <div class="hobby-icon">
+                  <i class="fas fa-running"></i>
+                </div>
+                <div>
+                  <strong>Sports Enthusiast</strong>
+                  <p>Staying active and competitive through sports.</p>
+                </div>
+              </div>
+              <div class="hobby-item">
+                <div class="hobby-icon">
+                  <i class="fas fa-plane-departure"></i>
+                </div>
+                <div>
+                  <strong>Traveling</strong>
+                  <p>Exploring new places and cultures.</p>
+                </div>
+              </div>
+              <div class="hobby-item">
+                <div class="hobby-icon">
+                  <i class="fas fa-laptop-code"></i>
+                </div>
+                <div>
+                  <strong>Continuous Learning</strong>
+                  <p>Upskilling through online platforms and the internet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Let's Talk</span>
+        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">
+          Let's connect — I'm open to opportunities in engineering, technology, and beyond.
+        </p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info-col" data-aos="fade-right">
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <i class="fas fa-envelope-open-text"></i>
+            </div>
+            <h3>Email Me</h3>
+            <a href="mailto:satyatejayerra@gmail.com" class="contact-link">satyatejayerra@gmail.com</a>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <h3>Call Me</h3>
+            <a href="tel:+917288825172" class="contact-link">+91-7288825172</a>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Location</h3>
+            <span class="contact-link">Bhimavaram, West Godavari, AP, India</span>
+          </div>
+          <div class="contact-social-links">
+            <a href="#" class="contact-social" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="#" class="contact-social" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-col" data-aos="fade-left">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <div class="input-wrapper">
+                <i class="fas fa-user"></i>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <div class="input-wrapper">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <div class="input-wrapper">
+                <i class="fas fa-tag"></i>
+                <input type="text" id="subject" name="subject" placeholder="Let's collaborate!" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <div class="input-wrapper textarea-wrapper">
+                <i class="fas fa-comment-dots"></i>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your opportunity or idea..." required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i>
+              <span>Message sent! I'll get back to you soon.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo">DST<span class="logo-accent">Y</span></span>
+          <p class="footer-tagline">Mechanical Engineer | EV Enthusiast | AI Explorer</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:satyatejayerra@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Divya Satya Teja Yerra. All rights reserved.</p>
+        <p class="footer-made">Crafted with <i class="fas fa-heart"></i> and code.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="scroll-to-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
